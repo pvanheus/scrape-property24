@@ -21,7 +21,6 @@ export async function handler(event, context, callback) {
             }
         }
     }
-    // property24 listing for Muizenberg
     callback(null, {
         statusCode: 200,
         body: JSON.stringify({msg: houses})
