@@ -6,7 +6,7 @@ export async function handler(event, context, callback) {
     let url = event.queryStringParameters.infourl;
     let url_parts = url.split('/');  // we will get ['https:', '', 'host']
     let base_url = url_parts.slice(0,3).join('/');
-    console.log('base_url: ' + base_url);
+    // console.log('base_url: ' + base_url);
     let response = await axios.get(url);
     let info = $('div.p24_alphabet div.col-xs-4 > a', response.data);
     // console.log(info[0]);
